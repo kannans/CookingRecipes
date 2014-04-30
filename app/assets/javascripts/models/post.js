@@ -5,5 +5,5 @@ CookingRecipes.Post = DS.Model.extend({
   body: 	 DS.attr('string'),
   authurId:  DS.attr('number'),
   isPrivate: DS.attr('boolean'),
-  category:  DS.belongsTo('category', { async: true })
 });
+

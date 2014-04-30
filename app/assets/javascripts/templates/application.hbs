@@ -7,8 +7,9 @@
           <!-- Title Area -->
           <li class="name">
             <h1>
-              <a href="#">
+              {{#link-to 'index'}}
                 Cooking Recipe
+              {{/link-to}}
               </a>
             </h1>
           </li>
@@ -180,3 +181,6 @@
       </div>
     </div>
   </footer>
+
+<hr />
+{{outlet}}

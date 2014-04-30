@@ -30,4 +30,4 @@ CookingRecipes.Router = Ember.Router.extend({
 
 $(function(){ $(document).foundation(); });
 
- 
+
