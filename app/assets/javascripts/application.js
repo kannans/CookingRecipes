@@ -19,6 +19,7 @@
 //= require ember-data
 //= require_self
 //= require cooking_recipes
+//= require foundation
 
 // for more details see: http://emberjs.com/guides/application/
 CookingRecipes = Ember.Application.create();
@@ -26,3 +27,7 @@ CookingRecipes.Router = Ember.Router.extend({
     location: 'history'
 });
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
+
+

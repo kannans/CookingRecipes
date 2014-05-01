@@ -1,0 +1,40 @@
+<form class="form-horizontal user-form">
+  <div class="row">    
+    <div class="large-12 columns">
+      <label>Title
+					{{view Ember.TextField valueBinding='title' placeholder='Title'}}                  
+      </label>
+        {{#if errors.title}}
+          <small class="error">
+              {{errors.title}}
+          </small>
+        {{/if}}
+    </div>
+  </div>
+   
+  <div class="row">
+    <div class="large-12 columns">
+      <label>  Description
+       {{textarea value=body cols="8" rows="6"}}
+      </label>
+      {{#if errors.body}}
+        <small class="error">
+            {{errors.body}}
+        </small>
+      {{/if}}
+    </div>
+  </div>
+  <div class="row">
+		<div class="large-4 columns">
+			<label>							
+			Upload Picture</label>
+		 
+		</div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+    	<button type="submit" class='button small radius' {{action save}} >Save</button> 
+      <button class='button small radius' {{action cancel}} >Cancel</button> 
+    </div>
+	</div>
+</form>
