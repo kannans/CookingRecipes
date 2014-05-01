@@ -1,0 +1,22 @@
+<form class="form-horizontal user-form">
+  <div class="row">    
+    <div class="large-12 columns">
+      <label>Category name
+					{{view Ember.TextField valueBinding='name' placeholder='Enter category name'}}                  
+      </label>
+        {{#if errors.name}}
+          <small class="error">
+              {{errors.name}}
+          </small>
+        {{/if}}
+    </div>
+  </div>
+   
+ 
+  <div class="row">
+    <div class="large-12 columns">
+    	<button type="submit" class='button small radius' {{action save}} >Save</button> 
+      <button class='button small radius' {{action cancel}} >Cancel</button> 
+    </div>
+	</div>
+</form>
