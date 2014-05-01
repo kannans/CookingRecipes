@@ -17,8 +17,7 @@ CookingRecipes.CategoriesNewController = Ember.ObjectController.extend({
     }
   }
 });
-<<<<<<< HEAD
-=======
+ 
 
 CookingRecipes.CategoryController = Ember.ObjectController.extend({
   actions: {
@@ -33,4 +32,4 @@ CookingRecipes.CategoryController = Ember.ObjectController.extend({
     }
   }
 });
->>>>>>> feature/category_delete
+ 
