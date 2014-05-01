@@ -11,3 +11,10 @@ CookingRecipes.PostRoute = Ember.Route.extend({
     return this.store.find('post', params.id);
   }
 });
+
+// Action:new
+CookingRecipes.PostsNewRoute = Ember.Route.extend({
+  model: function(params) {
+    return this.store.createRecord('post');
+  }
+});
