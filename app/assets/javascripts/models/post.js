@@ -19,3 +19,5 @@ CookingRecipes.Post.reopen({
     }
   }
 });
+
+ 

@@ -11,3 +11,11 @@ CookingRecipes.CategoryRoute = Ember.Route.extend({
     return this.store.find('category', params.id);
   }
 });
+
+
+// Action:new
+CookingRecipes.CategoriesNewRoute = Ember.Route.extend({
+  model: function() {
+    return this.store.createRecord('category');
+  }
+});

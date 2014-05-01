@@ -14,7 +14,7 @@ CookingRecipes.PostRoute = Ember.Route.extend({
 
 // Action:new
 CookingRecipes.PostsNewRoute = Ember.Route.extend({
-  model: function(params) {
+  model: function() {
     return this.store.createRecord('post');
   }
 });
