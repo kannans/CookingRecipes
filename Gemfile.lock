@@ -42,15 +42,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    ember-data-source (0.14)
+    ember-data-source (1.0.0.beta.7)
       ember-source
-    ember-rails (0.14.1)
+    ember-rails (0.15.0)
       active_model_serializers
       barber (>= 0.4.1)
-      ember-data-source
-      ember-source
+      ember-data-source (>= 1.0.0.beta.5)
+      ember-source (>= 1.1.0)
       execjs (>= 1.2)
-      handlebars-source
+      handlebars-source (> 1.0.0)
       jquery-rails (>= 1.0.17)
       railties (>= 3.1)
     ember-source (1.5.1.1)
@@ -144,8 +144,8 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  ember-rails (~> 0.14.1)
-  ember-source (~> 1.5.1.1)
+  ember-rails
+  ember-source
   foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
