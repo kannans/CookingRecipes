@@ -1,5 +1,5 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :id, :title, :body, :category_id, :authur_id, :is_private
-  belongs_to :category
+  attributes :id, :title, :body,  :authur_id, :is_private
   embed :ids
-end
+  has_one :category
+ end
