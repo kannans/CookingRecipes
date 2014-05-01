@@ -17,3 +17,17 @@ CookingRecipes.CategoriesNewController = Ember.ObjectController.extend({
     }
   }
 });
+
+CookingRecipes.CategoryController = Ember.ObjectController.extend({
+  actions: {
+    remove: function(site) {
+      var self = this;
+      if (window.confirm("Are you sure you want to delete this?")) {
+        site.deleteRecord();
+        site.save().then(function() {
+          self.transitionToRoute('categories');
+        });
+      }
+    }
+  }
+});
