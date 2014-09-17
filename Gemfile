@@ -12,6 +12,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        			 group: :development
 gem 'unicorn'
 gem "active_model_serializers"
-gem 'ember-rails' 
-gem 'ember-source' 
+gem 'ember-rails'
+gem 'ember-source'
 gem 'foundation-rails'

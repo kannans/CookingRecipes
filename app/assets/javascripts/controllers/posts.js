@@ -1,4 +1,4 @@
-CookingRecipes.PostsNewController = Ember.ObjectController.extend({  
+CookingRecipes.PostsNewController = Ember.ObjectController.extend({
   errors: null,
   actions: {
     save: function() {
@@ -8,7 +8,7 @@ CookingRecipes.PostsNewController = Ember.ObjectController.extend({
           self.transitionToRoute('post', self);
         },function(res) {
           self.set('errors', res );
-        });              
+        });
     },
     cancel: function() {
       var self = this;

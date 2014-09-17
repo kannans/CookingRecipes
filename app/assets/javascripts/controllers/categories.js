@@ -1,4 +1,4 @@
-CookingRecipes.CategoriesNewController = Ember.ObjectController.extend({  
+CookingRecipes.CategoriesNewController = Ember.ObjectController.extend({
   errors: null,
   actions: {
     save: function() {
@@ -8,7 +8,7 @@ CookingRecipes.CategoriesNewController = Ember.ObjectController.extend({
           self.transitionToRoute('category', self);
         },function(res) {
           self.set('errors', res );
-        });              
+        });
     },
     cancel: function() {
       var self = this;
@@ -17,7 +17,7 @@ CookingRecipes.CategoriesNewController = Ember.ObjectController.extend({
     }
   }
 });
- 
+
 
 CookingRecipes.CategoryController = Ember.ObjectController.extend({
   actions: {
@@ -32,4 +32,4 @@ CookingRecipes.CategoryController = Ember.ObjectController.extend({
     }
   }
 });
- 
+

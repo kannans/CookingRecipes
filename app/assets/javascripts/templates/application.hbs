@@ -1,7 +1,7 @@
 <div class="row">
    {{partial 'navs/nav'}}
 </div>
- 
+
  {{outlet}}
 
   <!-- Footer -->
@@ -15,10 +15,10 @@
       </div>
       <div class="large-6 columns">
         <ul class="inline-list right">
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FaQ</a></li>
+          <li>{{#link-to 'aboutus'}}About me{{/link-to}}</li>
+          <li>{{#link-to 'privacy'}}Privacy{{/link-to}}</li>
+          <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+          <li>{{#link-to 'faq'}}FaQ{{/link-to}}</li>
         </ul>
       </div>
     </div>

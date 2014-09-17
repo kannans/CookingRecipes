@@ -2,13 +2,16 @@
 
 CookingRecipes.Router.map(function() {
  this.resource('posts', function() {
- 		this.route('new'); 		
+ 		this.route('new');
     this.resource('post', { path: ':id' });
   });
 	this.resource('categories', function() {
-		this.route('new'); 		
+		this.route('new');
     this.resource('category', { path: ':id' });
   });
+  this.route('aboutus');
+  this.route('privacy');
+  this.route('contact');
+  this.route('faq');
 });
 
- 

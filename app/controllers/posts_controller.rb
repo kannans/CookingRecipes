@@ -26,9 +26,9 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    if @post.save       
+    if @post.save
       render json: @post, status: :created
-    end    
+    end
   end
 
   # PATCH/PUT /posts/1
